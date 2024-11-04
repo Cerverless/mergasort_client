@@ -3,6 +3,10 @@ all: ms_client
 ms_client: ms_client.o toyws.o
 	$(Q)$(CC) $(CFLAGS) $^ -o $@ -L../lib -lws
 
+
+stress_test: stress_test.o toyws.o
+	$(Q)$(CC) $(CFLAGS) $^ -o $@ -L../lib -lws
+
 run_two_jobs: run_two_jobs.o toyws.o 
 	$(Q)$(CC) $(CFLAGS) $^ -o $@ -L../lib -lws 
 
