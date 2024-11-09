@@ -21,6 +21,9 @@
 #include "toyws.h"
 #include "../../mergasort_controller/src/messaging.h" // TODO decouple by using own version after maturity
 
+/* ######################################################################################
+   # HAS TO BE REWORKED TO WORK THE SAME WAY AS stress_test.c                           #
+   ###################################################################################### */
 
 int main(void)
 {
